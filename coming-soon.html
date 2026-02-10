@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Coming Soon - KidHostels</title>
+  <meta name="description" content="This section of KidHostels is coming soon. We're building the global platform for verified, safe youth hostels. Sign up to be notified when we launch.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://kidhostels.com/coming-soon.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coming Soon - KidHostels">
+  <meta property="og:description" content="We're building the global platform for verified, safe youth hostels.">
+  <meta property="og:url" content="https://kidhostels.com/coming-soon.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&h=630&fit=crop&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #0B1D3A;
+      --navy-light: #132D5E;
+      --teal: #00B4D8;
+      --teal-dark: #0096B7;
+      --gold: #F4A261;
+      --gold-light: #F6BD7A;
+      --green: #2DC653;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFC;
+      --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0;
+      --gray-400: #94A3B8;
+      --gray-600: #475569;
+      --gray-800: #1E293B;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--navy);
+      color: var(--white);
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Background */
+    .coming-soon-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .coming-soon-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.15;
+    }
+
+    .coming-soon-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(11, 29, 58, 0.95) 0%,
+        rgba(19, 45, 94, 0.85) 50%,
+        rgba(0, 180, 216, 0.2) 100%
+      );
+    }
+
+    /* Header */
+    .cs-header {
+      position: relative;
+      z-index: 10;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .cs-header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--white);
+      font-size: 1.25rem;
+    }
+
+    .logo-icon { font-size: 1.5rem; }
+    .logo-text { font-weight: 400; letter-spacing: -0.02em; }
+    .logo-text strong { font-weight: 800; }
+
+    .back-link {
+      color: var(--teal);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover { color: var(--gold); }
+
+    /* Main Content */
+    .cs-main {
+      position: relative;
+      z-index: 10;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    .cs-content {
+      text-align: center;
+      max-width: 680px;
+      width: 100%;
+    }
+
+    /* Animated Shield */
+    .cs-shield {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 2rem;
+      background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      box-shadow: 0 0 0 8px rgba(0, 180, 216, 0.15), 0 0 0 16px rgba(0, 180, 216, 0.08);
+      animation: pulse-ring 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse-ring {
+      0%, 100% { box-shadow: 0 0 0 8px rgba(0, 180, 216, 0.15), 0 0 0 16px rgba(0, 180, 216, 0.08); }
+      50% { box-shadow: 0 0 0 12px rgba(0, 180, 216, 0.25), 0 0 0 24px rgba(0, 180, 216, 0.12); }
+    }
+
+    .cs-label {
+      display: inline-block;
+      background: rgba(0, 180, 216, 0.15);
+      color: var(--teal);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .cs-content h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--white) 0%, var(--gray-200) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cs-content p.cs-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--gray-400);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Email Form */
+    .cs-form {
+      display: flex;
+      gap: 0.75rem;
+      max-width: 480px;
+      margin: 0 auto 2rem;
+    }
+
+    .cs-form input {
+      flex: 1;
+      padding: 0.9rem 1.25rem;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      min-width: 0;
+    }
+
+    .cs-form input::placeholder { color: var(--gray-400); }
+    .cs-form input:focus {
+      border-color: var(--teal);
+      background: rgba(0, 180, 216, 0.05);
+    }
+
+    .cs-form button {
+      padding: 0.9rem 1.75rem;
+      background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+      color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cs-form button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 180, 216, 0.35);
+    }
+
+    .cs-divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      color: var(--gray-400);
+      font-size: 0.8rem;
+    }
+
+    .cs-divider::before,
+    .cs-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Features */
+    .cs-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .cs-feature {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 1.5rem 1rem;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .cs-feature:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(0, 180, 216, 0.2);
+    }
+
+    .cs-feature-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .cs-feature strong {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .cs-feature span {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+      line-height: 1.5;
+    }
+
+    /* Trust badges */
+    .cs-trust {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-top: 1rem;
+    }
+
+    .cs-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--gray-400);
+    }
+
+    .cs-trust-item span { color: var(--green); }
+
+    /* Footer */
+    .cs-footer {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .cs-footer p {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
+
+    .cs-footer a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .cs-form {
+        flex-direction: column;
+      }
+
+      .cs-form button {
+        width: 100%;
+      }
+
+      .cs-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .cs-shield {
+        width: 80px;
+        height: 80px;
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .cs-trust {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 768px) {
+      .cs-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+    }
+
+    /* Animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+
+    .fade-up-delay-1 { animation-delay: 0.1s; }
+    .fade-up-delay-2 { animation-delay: 0.2s; }
+    .fade-up-delay-3 { animation-delay: 0.3s; }
+    .fade-up-delay-4 { animation-delay: 0.4s; }
+    .fade-up-delay-5 { animation-delay: 0.5s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="coming-soon-bg" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600&h=900&fit=crop&q=80" alt="" loading="eager" width="1600" height="900">
+  </div>
+
+  <header class="cs-header">
+    <div class="cs-header-inner">
+      <a href="/" class="logo" aria-label="KidHostels Home">
+        <span class="logo-icon">&#x1F6E1;</span>
+        <span class="logo-text">Kid<strong>Hostels</strong></span>
+      </a>
+      <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+  </header>
+
+  <main class="cs-main">
+    <div class="cs-content">
+      <div class="cs-shield fade-up">&#x1F6E1;</div>
+
+      <span class="cs-label fade-up fade-up-delay-1">Coming Soon</span>
+
+      <h1 class="fade-up fade-up-delay-2">Something Safe &amp;<br>Extraordinary Is Coming</h1>
+
+      <p class="cs-subtitle fade-up fade-up-delay-3">We're building the world's most trusted platform for verified, alcohol-free youth hostels. Be the first to know when this section launches.</p>
+
+      <form class="cs-form fade-up fade-up-delay-3" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thank you!'; this.querySelector('input').disabled=true; this.querySelector('button').disabled=true;">
+        <input type="email" placeholder="Enter your email address" aria-label="Email address" required>
+        <button type="submit">Notify Me</button>
+      </form>
+
+      <div class="cs-divider fade-up fade-up-delay-4"><span>What's coming</span></div>
+
+      <div class="cs-features fade-up fade-up-delay-4">
+        <div class="cs-feature">
+          <span class="cs-feature-icon" aria-hidden="true">&#x1F30D;</span>
+          <strong>150+ Cities</strong>
+          <span>Verified youth hostels across the globe</span>
+        </div>
+        <div class="cs-feature">
+          <span class="cs-feature-icon" aria-hidden="true">&#x1F6E1;</span>
+          <strong>Certified Safe</strong>
+          <span>Gold, Silver &amp; Provisional tiers</span>
+        </div>
+        <div class="cs-feature">
+          <span class="cs-feature-icon" aria-hidden="true">&#x1F4DA;</span>
+          <strong>School Ready</strong>
+          <span>Documentation &amp; risk assessments</span>
+        </div>
+      </div>
+
+      <div class="cs-trust fade-up fade-up-delay-5">
+        <div class="cs-trust-item"><span>&#x2714;</span> Zero Alcohol Policy</div>
+        <div class="cs-trust-item"><span>&#x2714;</span> 24/7 Supervision</div>
+        <div class="cs-trust-item"><span>&#x2714;</span> Annual Audits</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="cs-footer">
+    <p>&copy; 2026 <a href="/">KidHostels.com</a> &mdash; Safe, Verified Youth Hostels Worldwide</p>
+  </footer>
+
+</body>
+</html>
